@@ -251,12 +251,17 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
     elif player == 6: 
         randomchoice = ['c', 'b']
         if getting_team_name:
+<<<<<<< HEAD
             return '#NewSquaddddddd'
+=======
+            return 'Squaddddddd'
+>>>>>>> refs/remotes/origin/Player6
         else:
             # use history, opponent_history, score, opponent_score
             # to compute your strategy
             if len(opponent_history) <= 45: 
                 return random.choice(randomchoice)
+<<<<<<< HEAD
             if len(opponent_history) >= 46 <= 55:
                 return 'b' 
             if len(opponent_history) >= 56 < 100:
@@ -265,6 +270,15 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
                 return 'b'  
             else:
                 return 'b'
+=======
+            if len(opponent_history) > 46:
+                return 'b' 
+            if len(opponent_history) >= 80 and len(opponent_history) < 100:
+                return random.choice(randomchoice)
+            if len(opponent_history) >= 100 < 150:
+                return 'b'  
+           
+>>>>>>> refs/remotes/origin/Player6
 
 
 
